@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Notes</title>
+    <style>
+        body{
+            font-family: Cambria;
+            font-size: 14px;
+            height: 100%;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, 1fr);
+            background-color: white;
+            gap: 1rem;
+            padding: .5rem 1.5rem;
+            width: 60vw;
+            align-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: .5rem;
+
+
+        }
+        .sub{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            text-align: center;
+            background-color: lightgray;
+            border-radius: .5rem;
+            padding: .2rem 1rem .5rem 1rem;
+            margin: 1rem;
+
+        }
+        .question{
+            text-align: center;
+            color: #FF0000;
+        }
+        #back-link{
+            color: #FF0000;
+        }
+        #back-link:hover{
+            font-size: .9rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sub">
+        <p class="question">What was completed and What was not?</p>
+        <div class="answer">
+            Overall, I completed the assignment as directed, by making a functional partial Yahtzee
+            Game. With five dice, using font awesome, and allowing user to roll three times before being forced to score
+            on the board. Also added a save and load button using local storage and JSON functions. This game is missing
+            some of the usual scoring spots (That are on the full game) you would see like straights and an actual
+            Yahtzee score button for five of a kind. I’m sure I could implement these with little hassle, however due to
+            the time constraints I don’t know if I could implement and test these right now. I do plan on making it a
+            full fledge Yahtzee and try to make the code more efficient/consistent throughout. Because I would like to
+            put it on my resume soon. One thing I wish I could’ve done was animate the dice a little bit, so it felt
+            more like a roll.
+        </div>
+    </div>
+    <div class="sub">
+        <p class="question">Main Data Structures Used?</p>
+        <div class="answer">
+            The main structures I used were object literals and arrays. I had a Scoreboard, Game, and
+            Dice object which each had a lot of stuff in them. Each worked by themselves and together to make this game
+            run. The scoreboard handled all the buttons and updates to the scoreboard as it goes. The game held more
+            general stuff for the game to run and operate correctly. And then finally, I tried to keep most of the dice
+            operations and dice storage within the dice class to be more organized.
+        </div>
+    </div>
+    <div class="sub">
+        <p class="question">Learning From this Project?</p>
+        <div class="answer">
+            This was a fun but challenging project. I learned how to work and use object literals as data containers. I
+            used and learned many ways to iterate through arrays, I think I used 3 different styles total. I practiced
+            more in depth with how to work with the DOM through JavaScript. I learned how to store data on the local
+            storage and how to access the data to use later. With that I also learned how to use JSON methods to make
+            the data more easily storable and readable later. This came in handy because I had to keep track of less and
+            was able to turn the data that needed to be saved into an object or string based on whether I was loading or
+            saving. I learned how to test my code and make sure everything was working as intended. I learned more about
+            testing and making sure things are working as intended. Ultimately, I learned how powerful project based
+            learning can be throughout this whole process.
+            <a id = "back-link"href="index.html">Back to Yahtzee</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
